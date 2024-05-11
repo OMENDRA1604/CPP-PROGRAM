@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
-int search(const std::vector<int> &nums, int target)
+int search(const ::vector<int> &nums, int target)
 {
     int left = 0;
     int right = nums.size() - 1;
@@ -51,17 +52,17 @@ int search(const std::vector<int> &nums, int target)
 
 int main()
 {
-    std::vector<int> nums = {4, 5, 6, 7, 0, 1, 2}; // Example rotated array
+    vector<int> nums = {4, 5, 6, 7, 0, 1, 2}; // Example rotated array
     int target = 5;
 
     int result = search(nums, target);
     if (result != -1)
     {
-        std::cout << "Target " << target << " found at index " << result << std::endl;
+        cout << "Target " << target << " found at index " << result << std::endl;
     }
     else
     {
-        std::cout << "Target " << target << " not found in the array." << std::endl;
+        cout << "Target " << target << " not found in the array." << std::endl;
     }
 
     return 0;
