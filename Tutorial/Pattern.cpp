@@ -67,7 +67,9 @@ int main()
 {
     int a, b;
     do
-    { 
+    {
+        cout << "Enter the number of lines  :" << endl;
+        cin >> a;
         cout << "Enter the number of which pattern you want to print : \n";
         cout << "1. Triangular Pattern \n";
         cout << "2. Inverted Triangular Pattern \n";
@@ -75,8 +77,6 @@ int main()
         cout << "4. Numeric Rectangle \n";
         cout << "0. Exit \n";
         cin >> b;
-        cout << "Enter the number of lines  :" << endl;
-        cin >> a;
         switch (b)
         {
         case 1:
