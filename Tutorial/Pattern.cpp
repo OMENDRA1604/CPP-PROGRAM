@@ -63,6 +63,25 @@ void invnumrec(int x)
         cout << endl;
     }
 }
+void numtri(int x)
+{
+    for (int i = 1; i <= x; i++)
+    {
+        for (int j = 1; j <= x - i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j < i; j++)
+        {
+            cout << j;
+        }
+        for (int j = i; j >= 1; j--)
+        {
+            cout << j;
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int a, b;
@@ -75,6 +94,7 @@ int main()
         cout << "2. Inverted Triangular Pattern \n";
         cout << "3. Triangle \n";
         cout << "4. Numeric Rectangle \n";
+        cout << "5. Numeric triangle \n";
         cout << "0. Exit \n";
         cin >> b;
         switch (b)
@@ -90,6 +110,9 @@ int main()
             break;
         case 4:
             numrec(a);
+            break;
+        case 5:
+            numtri(a);
             break;
         default:
             break;
